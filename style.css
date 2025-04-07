@@ -37,6 +37,10 @@ p {
   font-size: 1.4rem;
 }
 
+#mobile-menu i {
+  color: var(--cor-primaria);
+}
+
 #logo-button {
   border: none;
   background-color: transparent;
@@ -212,5 +216,5 @@ p {
   padding: 5rem 2.5rem 3rem 2.5rem;
 }
 
-.tittle-about {
-}
+/* .tittle-about {
+} */
