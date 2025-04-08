@@ -35,7 +35,7 @@
 
     <main>
       <section>
-        <div class="section-one" id="home">
+        <div class="section" id="home">
           <div class="text-section-one">
             <p class="text-hello-presentation">Olá, me chamo</p>
             <h1 class="highlighted-name">Izabelle Alves</h1>
@@ -85,113 +85,54 @@
         </div>
       </article>
 
-      <!-- <section>
-
-        <div class="section-two" id="projects">
-          <div class="project-card" data-nome="Product list with cart">
-            <a
-              href="https://github.com/IzabelleAlves/Product-list-with-cart"
-              target="_blank"
-            >
-              <img
-                src="/assets/image/project-lis-cart.png"
-                alt="Projeto 1. Product list with cart"
-              />
-            </a>
-              <h2 class="project-title">Product list with cart</h2>
-
-              <div class="project-links">
-              <p>HTML | CSS | JavaScript</p>
-              <a
-                href="https://github.com/IzabelleAlves/Product-list-with-cart"
-                target="_blank"
-                >Ver código | 
-              </a>
-              <a href="https://cart-product-site.netlify.app/" target="_blank"></a>
-                  Ver projeto</a
-              >
-            </div>
-          </div>
-
-          <div class="project-card">
-            <img
-              src="/assets/projetos/projeto2.png"
-              alt="projeto 2. Photogram"
-            />
-            <h2 class="project-title">Photogram</h2>
-            <div class="project-links">
-              <p>HTML | CSS | JavaScript</p>
-              <a
-                href="https://github.com/IzabelleAlves/Photogram"
-                target="_blank"
-                >Ver código |</a
-              >
-              <a href="">Ver projeto</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              src="/assets/projetos/bikecraft.png"
-              alt="Projeto 3. Bikecraft"
-            />
-            <h2 class="project-title">Bikcraft</h2>
-            <div class="project-links">
-              <p>HTML | CSS</p>
-              <a
-                href="https://github.com/IzabelleAlves/basic-Bikcraft-interface"
-                target="_blank"
-                >Ver código |</a
-              >
-              <a href="">Ver projeto</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/assets/projetos/mascots.png" alt="" />
-            <h2 class="project-title">Mascots</h2>
-              <div class="project-links">
-                <p>HTML | CSS | JavaScript</p>
-                <div class="project-links">
-                <a
-                  href="https://github.com/IzabelleAlves/Product-list-with-cart"
-                  target="_blank"
-                  >Ver código |</a
-                >
-                <a href="https://cart-product-site.netlify.app/" target="_blank"
-                  >Ver projeto</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section>
-        <div class="section-two" id="projects"></div>
+        <div class="section" id="projects"></div>
       </section>
 
       <section>
-        <div class="section-three">
-          <div class="about">
-            <h1 class="about-title" id="about">Sobre</h1>
-            <p class="about-text">
-              Sou estudante de Sistemas para Internet e desenvolvedora
-              front-end, com experiência em JavaScript, TypeScript, React, Vue,
-              Svelte, HTML, CSS, Tailwind, Sass e PHP. Tenho boas noções de
-              UX/UI Design, versionamento de código com Git/GitHub, fundamentos
-              em redes e testes automatizados com Cypress. Valorizo código
-              limpo, organizado e escalável, além de possuir excelentes
-              habilidades de comunicação e trabalho em equipe.
-            </p>
-            <button class="buttons btn-filled btn-filled-about">
-              Read More
-            </button>
-          </div>
-          <div class="options">
-            <p>Meu CV <i class="fa-solid fa-arrow-right"></i></p>
+        <div class="section about">
+          <h1 class="title" id="about">Sobre</h1>
+          <p class="text">
+            Sou estudante de Sistemas para Internet e desenvolvedora front-end,
+            com experiência em JavaScript, TypeScript, React, Vue, Svelte, HTML,
+            CSS, Tailwind, Sass e PHP. Tenho boas noções de UX/UI Design,
+            versionamento de código com Git/GitHub, fundamentos em redes e
+            testes automatizados com Cypress. Valorizo código limpo, organizado
+            e escalável, além de possuir excelentes habilidades de comunicação e
+            trabalho em equipe.
+          </p>
+          <button class="buttons btn-filled btn-filled-about">Read More</button>
+        </div>
+      </section>
+
+      <article>
+        <div class="options icons-wrapper">
+          <p>Meu CV <i class="fa-solid fa-arrow-right"></i></p>
+          <div>
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-square-github"></i>
           </div>
         </div>
-      </section>
+      </article>
+
+      <search>
+        <div class="section education">
+          <div>
+            <h1 class="title" id="">Formações</h1>
+            <p class="text">
+              Experiências acadêmicas e cursos extracurriculares.
+            </p>
+          </div>
+          <div>
+            <h2 class="sub-title title-education">
+              Sistemas para Internet | IFPE
+            </h2>
+            <span class="span-date">Fevereiro 2024 - Dezembro 2026</span>
+          </div>
+
+          <!-- FAZER ISSO RENDERIZADO PELO JS!!!!! -->
+        </div>
+      </search>
     </main>
 
     <script src="/script.js"></script>
