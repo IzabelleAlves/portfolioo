@@ -12,6 +12,12 @@ p {
   font-family: "Figtree", serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 :root {
   --cor-primaria: #3e0034;
   --cor-secundaria: #6e2d62;
@@ -21,7 +27,6 @@ p {
 }
 
 #header-menu {
-  /* padding: 1.1875rem 2.5rem 1.1875rem 2.5rem; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,9 +56,8 @@ p {
 
 /* bloco um  */
 
-.section-one {
-  display: flex;
-  padding: 4rem 2.5rem 0rem 2.5rem;
+.section {
+  padding: 4rem 2.5rem 3rem 2.5rem;
 }
 
 .text-hello-presentation {
@@ -132,7 +136,7 @@ p {
   display: flex;
   justify-content: space-between;
   /* margin-top: 24px; */
-  padding: 4rem 2.5rem 0rem 2.5rem;
+  padding: 0rem 2.5rem 0rem 2.5rem;
   /* font-size: xx-large; */
 }
 
@@ -147,10 +151,6 @@ p {
 }
 
 /* bloco dois  */
-
-.section-two {
-  padding: 5rem 2.5rem 0rem 2.5rem;
-}
 
 .project-card {
   display: flex;
@@ -175,7 +175,7 @@ p {
   transform: scale(1.05);
 }
 
-.project-title {
+.sub-title {
   color: var(--cor-secundaria);
   margin-top: 2%;
   font-size: 24px;
@@ -196,11 +196,8 @@ p {
 
 /* bloco três */
 
-.section-three {
-  padding: 2.5rem 2.5rem 3rem 2.5rem;
-}
-
-.about {
+.about,
+.education {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
@@ -212,14 +209,28 @@ p {
   border-radius: 10px;
 }
 
-.about-title {
+.title {
   font-size: 32px;
   color: var(--cor-secundaria);
 }
 
-.about-text {
+.text {
   color: var(--cor-texto);
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.title-education {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.span-date {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  color: var(--cor-secundaria);
+  font-style: italic;
 }
