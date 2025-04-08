@@ -43,7 +43,7 @@ projects.forEach((project) => {
     <a href="${project.liveUrl}" target="_blank">
       <img src="${project.img}" alt="${project.alt}" />
     </a>
-    <h2 class="project-title">${project.title}</h2>
+    <h2 class="sub-title">${project.title}</h2>
     <div class="project-links">
       <p>${project.stack}</p>
         <div>
