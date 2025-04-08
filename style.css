@@ -21,11 +21,13 @@ p {
 }
 
 #header-menu {
+  /* padding: 1.1875rem 2.5rem 1.1875rem 2.5rem; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   max-width: 430px;
+  height: 70px;
   background-color: var(--cor-branco);
   box-shadow: 0 0 2em #d3d3d3;
 }
@@ -50,11 +52,8 @@ p {
 /* bloco um  */
 
 .section-one {
-  /* margin-top: 10%; */
   display: flex;
   padding: 4rem 2.5rem 0rem 2.5rem;
-  /* gap: 24px; */
-  /* justify-content: space-around; */
 }
 
 .text-hello-presentation {
