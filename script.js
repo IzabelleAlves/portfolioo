@@ -55,3 +55,41 @@ projects.forEach((project) => {
 
   projectsContainer.appendChild(card);
 });
+
+const education = [
+  {
+    name: "Sistemas para Internet | IFPE",
+    duration: "Fevereiro 2024 - Dezembro 2026",
+  },
+  {
+    name: "Formação Acelerada em Programação (FAP) - FrontEnd | Softex Pernambuco",
+    duration: "Junho 2024 - Dezembro 2024",
+  },
+  {
+    name: "Serviço Social | UFPE	",
+    duration: "Agosto 2019 - Outubro 2023",
+  },
+];
+
+const educationContainer = document.getElementById("education");
+
+education.forEach((education) => {
+  const cardEducation = document.createElement("div");
+  cardEducation.classList.add("card-education");
+
+  const contentDiv = document.createElement("div");
+
+  const title = document.createElement("h2");
+  title.className = "sub-title title-education";
+  title.textContent = education.name;
+
+  const span = document.createElement("span");
+  span.className = "span-date";
+  span.textContent = education.duration;
+
+  contentDiv.appendChild(title);
+  contentDiv.appendChild(span);
+
+  cardEducation.appendChild(contentDiv);
+  educationContainer.appendChild(cardEducation);
+});
