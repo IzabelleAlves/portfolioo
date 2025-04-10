@@ -57,7 +57,11 @@ body {
 /* bloco um  */
 
 .section {
-  padding: 4rem 2.5rem 3rem 2.5rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.home {
+  padding: 3rem 2.5rem 3rem 2.5rem;
 }
 
 .text-hello-presentation {
@@ -135,9 +139,11 @@ body {
 .icons-wrapper {
   display: flex;
   justify-content: space-between;
-  /* margin-top: 24px; */
-  padding: 0rem 2.5rem 0rem 2.5rem;
-  /* font-size: xx-large; */
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.icons-wrapper a {
+  color: var(--cor-secundaria);
 }
 
 .links-social-icons-article {
@@ -146,11 +152,18 @@ body {
   font-size: x-large;
 }
 
-.icons-wrapper a {
+.text-my-cv {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
   color: var(--cor-secundaria);
 }
 
 /* bloco dois  */
+
+.projects {
+  padding: 5rem 2.5rem 3rem 2.5rem;
+}
 
 .project-card {
   display: flex;
