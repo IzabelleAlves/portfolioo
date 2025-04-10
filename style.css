@@ -236,7 +236,7 @@ body {
 
 .title-education {
   font-size: 18px;
-  line-height: 32px;
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -246,4 +246,10 @@ body {
   line-height: 32px;
   color: var(--cor-secundaria);
   font-style: italic;
+}
+
+.card-education {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
