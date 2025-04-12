@@ -98,3 +98,66 @@ education.forEach((education) => {
 // btn.textContent = "Ver Mais";
 // btn.classList.add("buttons", "btn-filled", "btn-filled-about");
 // educationContainer.appendChild(btn);
+
+const experience = [
+  {
+    name: "Residência em Software",
+    location: "Sistemas Bem Vivendo Informática",
+    description:
+      "Atuação em projetos reais com foco em desenvolvimento ágil. Trabalhei com testes automatizados frontEnd utilizando Cypress, para garantir a qualidade da aplicação. Além de ",
+  },
+  {
+    name: "Monitoria em Lógica de Programação e Estrutura de Dados",
+    location: "IFPE",
+    description:
+      "Apoio a alunos, correção de atividades e reforço de conteúdo em sala.",
+  },
+];
+
+const experienceContainer = document.getElementById("experience");
+
+experience.forEach((experience) => {
+  const cardExperience = document.createElement("div");
+  cardExperience.classList.add("card-experience");
+
+  const iconSee = document.createElement("span");
+  iconSee.classList.add("icon-see");
+  iconSee.innerHTML = `<i class="fa-solid fa-eye"></i>`;
+
+  const contentDiv = document.createElement("div");
+
+  const title = document.createElement("h2");
+  title.className = "sub-title title-experience";
+  title.textContent = experience.name;
+
+  const span = document.createElement("span");
+  span.className = "span-date";
+  span.textContent = experience.location;
+
+  const description = document.createElement("p");
+  description.className = "description-experience hidden";
+  description.textContent = experience.description;
+
+  contentDiv.appendChild(title);
+  contentDiv.appendChild(span);
+  contentDiv.appendChild(description);
+
+  cardExperience.appendChild(contentDiv);
+  cardExperience.appendChild(iconSee);
+
+  cardExperience.addEventListener("click", () => {
+    description.classList.toggle("hidden");
+
+    const icon = iconSee.querySelector("i");
+
+    if (description.classList.contains("hidden")) {
+      icon.classList.remove("fa-eye-slash");
+      icon.classList.add("fa-eye");
+    } else {
+      icon.classList.remove("fa-eye");
+      icon.classList.add("fa-eye-slash");
+    }
+  });
+
+  experienceContainer.appendChild(cardExperience);
+});
