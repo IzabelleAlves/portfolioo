@@ -162,7 +162,7 @@ body {
 /* bloco dois  */
 
 .projects {
-  padding: 5rem 2.5rem 3rem 2.5rem;
+  padding: 5rem 2.5rem 1rem 2.5rem;
 }
 
 .project-card {
@@ -172,7 +172,7 @@ body {
   border-radius: 8px;
   max-width: 100%;
   cursor: pointer;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .project-card img {
