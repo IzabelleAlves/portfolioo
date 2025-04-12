@@ -135,7 +135,7 @@ experience.forEach((experience) => {
   span.textContent = experience.location;
 
   const description = document.createElement("p");
-  description.className = "description-experience hidden";
+  description.className = "description-experience hidden text";
   description.textContent = experience.description;
 
   contentDiv.appendChild(title);
