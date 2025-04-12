@@ -93,3 +93,8 @@ education.forEach((education) => {
   cardEducation.appendChild(contentDiv);
   educationContainer.appendChild(cardEducation);
 });
+
+// const btn = document.createElement("button");
+// btn.textContent = "Ver Mais";
+// btn.classList.add("buttons", "btn-filled", "btn-filled-about");
+// educationContainer.appendChild(btn);
