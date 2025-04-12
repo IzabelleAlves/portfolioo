@@ -210,7 +210,8 @@ body {
 /* bloco três */
 
 .about,
-.education {
+.education,
+.experience {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
@@ -234,7 +235,8 @@ body {
   font-weight: 400;
 }
 
-.title-education {
+.title-education,
+.title-experience {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -248,8 +250,20 @@ body {
   font-style: italic;
 }
 
-.card-education {
+.card-education,
+.card-experience {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
+}
+
+.icon-see {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-primaria);
+}
+
+.hidden {
+  display: none;
 }
