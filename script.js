@@ -120,30 +120,33 @@ experience.forEach((experience) => {
   const cardExperience = document.createElement("div");
   cardExperience.classList.add("card-experience");
 
-  const iconSee = document.createElement("span");
-  iconSee.classList.add("icon-see");
-  iconSee.innerHTML = `<i class="fa-solid fa-eye"></i>`;
-
-  const contentDiv = document.createElement("div");
-
   const title = document.createElement("h2");
   title.className = "sub-title title-experience";
   title.textContent = experience.name;
 
-  const span = document.createElement("span");
-  span.className = "span-date";
-  span.textContent = experience.location;
+  const iconSee = document.createElement("span");
+  iconSee.classList.add("icon-see");
+  iconSee.innerHTML = `<i class="fa-solid fa-eye"></i>`;
 
-  const description = document.createElement("p");
+  const header = document.createElement("div");
+  header.classList.add("experience-header");
+  header.appendChild(title);
+  header.appendChild(iconSee);
+
+  const location = document.createElement("span");
+  location.className = "span-date";
+  location.textContent = experience.location;
+
+  const description = document.createElement("div");
   description.className = "description-experience hidden text";
   description.textContent = experience.description;
 
-  contentDiv.appendChild(title);
-  contentDiv.appendChild(span);
+  const contentDiv = document.createElement("div");
+  contentDiv.appendChild(header); // <-- agora inclui o header
+  contentDiv.appendChild(location);
   contentDiv.appendChild(description);
 
   cardExperience.appendChild(contentDiv);
-  cardExperience.appendChild(iconSee);
 
   cardExperience.addEventListener("click", () => {
     description.classList.toggle("hidden");
