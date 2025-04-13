@@ -250,18 +250,33 @@ body {
   font-style: italic;
 }
 
-.card-education,
-.card-experience {
+.card-education {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
 
+.card-experience {
+  position: relative;
+}
+
 .icon-see {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--cor-primaria);
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+.experience-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.title-experience {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 0.7rem;
 }
 
 .hidden {
