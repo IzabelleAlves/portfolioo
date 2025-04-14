@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Product list with cart",
-    img: "/assets/image/project-lis-cart.png",
+    img: "/assets/image/projects/project-lis-cart.png",
     alt: "Projeto 1. Product list with cart",
     stack: "HTML | CSS | JavaScript",
     codeUrl: "https://github.com/IzabelleAlves/Product-list-with-cart",
@@ -9,20 +9,12 @@ const projects = [
   },
   {
     title: "Mascots",
-    img: "/assets/image/project-mascots.png",
+    img: "/assets/image/projects/project-mascots.png",
     alt: "Projeto 4. Mascots",
     stack: "HTML | CSS | JavaScript",
     codeUrl: "https://github.com/IzabelleAlves/Product-list-with-cart",
     liveUrl: "https://cart-product-site.netlify.app/",
   },
-  // {
-  //   title: "",
-  //   img: "",
-  //   alt: "",
-  //   stack: "",
-  //   codeUrl: "",
-  //   liveUrl: "",
-  // },
   // {
   //   title: "",
   //   img: "",
@@ -55,6 +47,53 @@ projects.forEach((project) => {
 
   projectsContainer.appendChild(card);
 });
+
+//
+
+// const articlesData = [
+//   {
+//     topContentLink: `<a href="#projects"><i class="fa-solid fa-arrow-down arrow"></i></a>`,
+//   },
+//   {
+//     topContentText: `<p class="text-my-cv">Meu CV <i class="fa-solid fa-arrow-right"></i></p>`,
+//   },
+// ];
+
+// const socialIcons = `
+//   <div class="links-social-icons-article">
+//     <a href="https://www.linkedin.com/in/izabellealvess/" target="_blank" data-name="link linkedin">
+//       <i class="fa-brands fa-linkedin"></i>
+//     </a>
+//     <a href="https://github.com/IzabelleAlves" target="_blank" data-name="link github">
+//       <i class="fa-brands fa-square-github"></i>
+//     </a>
+//   </div>
+// `;
+
+// const container1 = document.getElementById("container-article1");
+// const container2 = document.getElementById("container-article2");
+
+// // Para o primeiro conjunto de artigos
+// articlesData.forEach((item, index) => {
+//   if (item.topContentLink) {
+//     const article1 = document.createElement("article");
+//     article1.classList.add("icons-wrapper");
+//     article1.innerHTML = item.topContentLink + socialIcons;
+//     container1.appendChild(article1);
+//   }
+// });
+
+// // Para o segundo conjunto de artigos
+// articlesData.forEach((item, index) => {
+//   if (item.topContentText) {
+//     const article2 = document.createElement("article");
+//     article2.classList.add("icons-wrapper");
+//     article2.innerHTML = item.topContentText + socialIcons;
+//     container2.appendChild(article2);
+//   }
+// });
+
+//
 
 const education = [
   {
@@ -94,10 +133,7 @@ education.forEach((education) => {
   educationContainer.appendChild(cardEducation);
 });
 
-// const btn = document.createElement("button");
-// btn.textContent = "Ver Mais";
-// btn.classList.add("buttons", "btn-filled", "btn-filled-about");
-// educationContainer.appendChild(btn);
+//
 
 const experience = [
   {
