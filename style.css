@@ -211,7 +211,8 @@ body {
 
 .about,
 .education,
-.experience {
+.experience,
+.skills-section {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
@@ -281,4 +282,41 @@ body {
 
 .hidden {
   display: none;
+}
+
+.skills-section h2 {
+  color: #64145f;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+  justify-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #64145f;
+  font-weight: 500;
+}
+
+footer p {
+  color: #64145f;
+  font-size: 0.9rem;
 }
