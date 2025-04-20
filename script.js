@@ -141,6 +141,87 @@ education();
 
 //
 
+// function experience() {
+//   const experience = [
+//     {
+//       name: "Residência em Engenharia de Software",
+//       location: "Sistemas Bem Vivendo Informática",
+//       description:
+//         "Participação de projetos reais com foco em metodologias ágeis de desenvolvimento. Atuei na implementação de testes automatizados no front-end com Cypress, assegurando a qualidade das aplicações. Também trabalhei com tecnologias como Next.js, Tailwind CSS e React.",
+//     },
+//     {
+//       name: "Monitoria em Lógica de Programação e Estrutura de Dados",
+//       location: "IFPE",
+//       description:
+//         "Apoio pedagógico de forma voluntária à alunos dos cursos de graduação e curso técnico voltados para a área da tecnologia no IFPE, com foco em Lógica de Programação e Estrutura de Dados. Fui responsável por esclarecer dúvidas, reforçar conteúdos em sala, corrigir atividades e auxiliar na resolução de exercícios. Atuei promovendo o desenvolvimento do raciocínio lógico e incentivando boas práticas de programação, além de colaborar com professores para melhorar a experiência de aprendizagem.",
+//     },
+//     {
+//       name: "PET Conexão Periferia",
+//       location: "IFPE",
+//       description:
+//         "Integrante do Programa de Educação Tutorial (PET) com foco em desenvolvimento de soluções tecnológicas para enfrentamento de problemas sociais. Atuo no desenvolvimento de ferramentas digitais como bots e mapas interativos para o combate à desinformação. Mais informações sobre o programa [aqui](https://portal.ifpe.edu.br/igarassu/ensino/pet/).",
+//     },
+//     {
+//       name: "Serviço Social",
+//       location: "UFPE",
+//       description:
+//         "Formação complementar com perspectiva crítica e foco em impacto social.",
+//     },
+//   ];
+
+//   const experienceContainer = document.getElementById("experience");
+
+//   experience.forEach((experience) => {
+//     const cardExperience = document.createElement("div");
+//     cardExperience.classList.add("card-experience");
+
+//     const title = document.createElement("h2");
+//     title.className = "sub-title title-experience";
+//     title.textContent = experience.name;
+
+//     const iconSee = document.createElement("span");
+//     iconSee.classList.add("icon-see");
+//     iconSee.innerHTML = `<i class="fa-solid fa-eye"></i>`;
+
+//     const header = document.createElement("div");
+//     header.classList.add("experience-header");
+//     header.appendChild(title);
+//     header.appendChild(iconSee);
+
+//     const location = document.createElement("span");
+//     location.className = "span-date";
+//     location.textContent = experience.location;
+
+//     const description = document.createElement("div");
+//     description.className = "description-experience hidden text";
+//     description.textContent = experience.description;
+
+//     const contentDiv = document.createElement("div");
+//     contentDiv.appendChild(header);
+//     contentDiv.appendChild(location);
+//     contentDiv.appendChild(description);
+
+//     cardExperience.appendChild(contentDiv);
+
+//     cardExperience.addEventListener("click", () => {
+//       description.classList.toggle("hidden");
+
+//       const icon = iconSee.querySelector("i");
+
+//       if (description.classList.contains("hidden")) {
+//         icon.classList.remove("fa-eye-slash");
+//         icon.classList.add("fa-eye");
+//       } else {
+//         icon.classList.remove("fa-eye");
+//         icon.classList.add("fa-eye-slash");
+//       }
+//     });
+
+//     experienceContainer.appendChild(cardExperience);
+//   });
+// }
+// experience();
+
 function experience() {
   const experience = [
     {
@@ -153,7 +234,31 @@ function experience() {
       name: "Monitoria em Lógica de Programação e Estrutura de Dados",
       location: "IFPE",
       description:
-        "Apoio pedagógico a alunos dos cursos de graduação e curso técnico voltados para a área da tecnologia no IFPE, com foco em Lógica de Programação e Estrutura de Dados. Fui responsável por esclarecer dúvidas, reforçar conteúdos em sala, corrigir atividades e auxiliar na resolução de exercícios. Atuei promovendo o desenvolvimento do raciocínio lógico e incentivando boas práticas de programação, além de colaborar com professores para melhorar a experiência de aprendizagem.",
+        "Apoio pedagógico de forma voluntária à alunos dos cursos de graduação e curso técnico voltados para a área da tecnologia no IFPE, com foco em Lógica de Programação e Estrutura de Dados. Fui responsável por esclarecer dúvidas, reforçar conteúdos em sala, corrigir atividades e auxiliar na resolução de exercícios. Atuei promovendo o desenvolvimento do raciocínio lógico e incentivando boas práticas de programação, além de colaborar com professores para melhorar a experiência de aprendizagem.",
+    },
+    {
+      name: "PET Conexão Periferia",
+      location: "IFPE",
+      description:
+        "Integrante do Programa de Educação Tutorial (PET) com foco em desenvolvimento de soluções tecnológicas para enfrentamento de problemas sociais. Atuo no desenvolvimento de ferramentas digitais como bots e mapas interativos para o combate à desinformação. Mais informações sobre o programa <a href='https://portal.ifpe.edu.br/igarassu/ensino/pet/' target='_blank'>aqui</a>.",
+    },
+    {
+      name: "CS_Women: promovendo a equidade de gênero em Computação",
+      location: "Centro de Informática UFPE",
+      description:
+        "O Cintia é o grupo de mulheres do Centro de Informática da UFPE, criado com o objetivo de ser uma rede de apoio entre todas as mulheres que fazem parte do Centro de Informática e também da área de TI. O Cintia também tem o objetivo de incentivar a participação feminina nas áreas da ciência, tecnologia e computação, promovendo ações para conquistar mais mulheres a ingressarem nestas áreas e disponibilizando o acompanhamento e amadrinhamento para incentivar as mulheres que já estão inseridas nesse universo. A grande meta é promover a igualdade de gênero na área de atuação do grupo.",
+    },
+    {
+      name: "Recife Cidade Parque",
+      location: "Prefeitura da Cidade do Recife",
+      description:
+        "Parceria entre a Prefeitura do Recife e a Universidade Federal de Pernambuco - UFPE, na busca de soluções para os desafios do Recife diante das mudanças climáticas.",
+    },
+    {
+      name: "Serviço Social",
+      location: "UFPE",
+      description:
+        "Formação complementar com perspectiva crítica e foco em impacto social.",
     },
   ];
 
@@ -182,7 +287,7 @@ function experience() {
 
     const description = document.createElement("div");
     description.className = "description-experience hidden text";
-    description.textContent = experience.description;
+    description.innerHTML = experience.description;
 
     const contentDiv = document.createElement("div");
     contentDiv.appendChild(header);
