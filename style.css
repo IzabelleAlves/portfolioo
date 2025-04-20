@@ -261,6 +261,7 @@ body {
   gap: 16px;
 }
 
+/* bloco quatro */
 .card-experience {
   position: relative;
 }
@@ -323,4 +324,29 @@ body {
 footer p {
   color: #64145f;
   font-size: 0.9rem;
+}
+
+/* bloco cinco */
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 20px;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
