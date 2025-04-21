@@ -1,19 +1,4 @@
 function menuMobile() {
-  // const menuBtn = document.getElementById("mobile-menu");
-  // const mobileNav = document.getElementById("mobile-nav");
-  // const menuLinks = document.querySelectorAll("#mobile-nav a");
-
-  // menuBtn.addEventListener("click", () => {
-  //   mobileNav.classList.toggle("active");
-  //   mobileNav.classList.toggle("hidden");
-  // });
-
-  // menuLinks.forEach((link) => {
-  //   link.addEventListener("click", () => {
-  //     mobileNav.classList.remove("active");
-  //     mobileNav.classList.add("hidden");
-  //   });
-  // });
   const menuBtn = document.getElementById("mobile-menu");
   const closeBtn = document.getElementById("close-menu");
   const mobileNav = document.getElementById("mobile-nav");
@@ -45,7 +30,7 @@ function projects() {
     {
       title: "Product list with cart",
       img: "/assets/image/projects/project-lis-cart.png",
-      alt: "Projeto 1. Product list with cart",
+      alt: "Product list with cart",
       stack: "HTML | CSS | JavaScript",
       codeUrl: "https://github.com/IzabelleAlves/Product-list-with-cart",
       liveUrl: "https://cart-product-site.netlify.app/",
@@ -53,10 +38,26 @@ function projects() {
     {
       title: "Mascots",
       img: "/assets/image/projects/project-mascots.png",
-      alt: "Projeto 4. Mascots",
+      alt: "Mascots",
       stack: "HTML | CSS | JavaScript",
       codeUrl: "https://github.com/IzabelleAlves/Product-list-with-cart",
       liveUrl: "https://cart-product-site.netlify.app/",
+    },
+    {
+      title: "Cronômetro",
+      img: "/assets/image/projects/cronometro.png",
+      alt: "Cronômetro",
+      stack: "HTML | CSS | JavaScript",
+      codeUrl: "https://github.com/IzabelleAlves/Cronometro",
+      liveUrl: "https://timemaster-cronometro.netlify.app/",
+    },
+    {
+      title: "MyReminder",
+      img: "/assets/image/projects/reminder.png",
+      alt: "My Reminder",
+      stack: "HTML | CSS | JavaScript",
+      codeUrl: "https://github.com/IzabelleAlves/reminder",
+      liveUrl: "https://my-reminder1000.netlify.app/",
     },
     // {
     //   title: "",
