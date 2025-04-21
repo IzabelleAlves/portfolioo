@@ -1,3 +1,45 @@
+function menuMobile() {
+  // const menuBtn = document.getElementById("mobile-menu");
+  // const mobileNav = document.getElementById("mobile-nav");
+  // const menuLinks = document.querySelectorAll("#mobile-nav a");
+
+  // menuBtn.addEventListener("click", () => {
+  //   mobileNav.classList.toggle("active");
+  //   mobileNav.classList.toggle("hidden");
+  // });
+
+  // menuLinks.forEach((link) => {
+  //   link.addEventListener("click", () => {
+  //     mobileNav.classList.remove("active");
+  //     mobileNav.classList.add("hidden");
+  //   });
+  // });
+  const menuBtn = document.getElementById("mobile-menu");
+  const closeBtn = document.getElementById("close-menu");
+  const mobileNav = document.getElementById("mobile-nav");
+  const menuLinks = document.querySelectorAll("#mobile-nav a");
+
+  menuBtn.addEventListener("click", () => {
+    mobileNav.classList.add("active");
+    mobileNav.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    mobileNav.classList.remove("active");
+    setTimeout(() => mobileNav.classList.add("hidden"), 300); // delay para esconder após transição
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+      setTimeout(() => mobileNav.classList.add("hidden"), 300);
+    });
+  });
+}
+menuMobile();
+
+//
+
 function projects() {
   const projects = [
     {
@@ -140,87 +182,6 @@ function education() {
 education();
 
 //
-
-// function experience() {
-//   const experience = [
-//     {
-//       name: "Residência em Engenharia de Software",
-//       location: "Sistemas Bem Vivendo Informática",
-//       description:
-//         "Participação de projetos reais com foco em metodologias ágeis de desenvolvimento. Atuei na implementação de testes automatizados no front-end com Cypress, assegurando a qualidade das aplicações. Também trabalhei com tecnologias como Next.js, Tailwind CSS e React.",
-//     },
-//     {
-//       name: "Monitoria em Lógica de Programação e Estrutura de Dados",
-//       location: "IFPE",
-//       description:
-//         "Apoio pedagógico de forma voluntária à alunos dos cursos de graduação e curso técnico voltados para a área da tecnologia no IFPE, com foco em Lógica de Programação e Estrutura de Dados. Fui responsável por esclarecer dúvidas, reforçar conteúdos em sala, corrigir atividades e auxiliar na resolução de exercícios. Atuei promovendo o desenvolvimento do raciocínio lógico e incentivando boas práticas de programação, além de colaborar com professores para melhorar a experiência de aprendizagem.",
-//     },
-//     {
-//       name: "PET Conexão Periferia",
-//       location: "IFPE",
-//       description:
-//         "Integrante do Programa de Educação Tutorial (PET) com foco em desenvolvimento de soluções tecnológicas para enfrentamento de problemas sociais. Atuo no desenvolvimento de ferramentas digitais como bots e mapas interativos para o combate à desinformação. Mais informações sobre o programa [aqui](https://portal.ifpe.edu.br/igarassu/ensino/pet/).",
-//     },
-//     {
-//       name: "Serviço Social",
-//       location: "UFPE",
-//       description:
-//         "Formação complementar com perspectiva crítica e foco em impacto social.",
-//     },
-//   ];
-
-//   const experienceContainer = document.getElementById("experience");
-
-//   experience.forEach((experience) => {
-//     const cardExperience = document.createElement("div");
-//     cardExperience.classList.add("card-experience");
-
-//     const title = document.createElement("h2");
-//     title.className = "sub-title title-experience";
-//     title.textContent = experience.name;
-
-//     const iconSee = document.createElement("span");
-//     iconSee.classList.add("icon-see");
-//     iconSee.innerHTML = `<i class="fa-solid fa-eye"></i>`;
-
-//     const header = document.createElement("div");
-//     header.classList.add("experience-header");
-//     header.appendChild(title);
-//     header.appendChild(iconSee);
-
-//     const location = document.createElement("span");
-//     location.className = "span-date";
-//     location.textContent = experience.location;
-
-//     const description = document.createElement("div");
-//     description.className = "description-experience hidden text";
-//     description.textContent = experience.description;
-
-//     const contentDiv = document.createElement("div");
-//     contentDiv.appendChild(header);
-//     contentDiv.appendChild(location);
-//     contentDiv.appendChild(description);
-
-//     cardExperience.appendChild(contentDiv);
-
-//     cardExperience.addEventListener("click", () => {
-//       description.classList.toggle("hidden");
-
-//       const icon = iconSee.querySelector("i");
-
-//       if (description.classList.contains("hidden")) {
-//         icon.classList.remove("fa-eye-slash");
-//         icon.classList.add("fa-eye");
-//       } else {
-//         icon.classList.remove("fa-eye");
-//         icon.classList.add("fa-eye-slash");
-//       }
-//     });
-
-//     experienceContainer.appendChild(cardExperience);
-//   });
-// }
-// experience();
 
 function experience() {
   const experience = [
