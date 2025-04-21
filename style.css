@@ -260,7 +260,6 @@ body {
   color: var(--cor-secundaria);
   margin-top: 2%;
   font-size: 24px;
-  font-weight: 400px;
   font-weight: 600;
 }
 
@@ -356,14 +355,6 @@ body {
 .skills-section h2 {
   color: #64145f;
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1.2rem;
-  justify-items: center;
   margin-bottom: 1.5rem;
 }
 
