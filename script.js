@@ -322,3 +322,34 @@ function skills() {
 skills();
 
 //
+
+window.addEventListener("DOMContentLoaded", () => {
+  const mobileMenuButton = document.getElementById("mobile-menu");
+  const headerMenu = document.getElementById("header-menu");
+  const menuDesktop = document.getElementById("desktop-nav");
+
+  // Função para ajustar o menu de acordo com a largura da tela
+  const adjustMenu = () => {
+    if (window.innerWidth > 768) {
+      mobileMenuButton.classList.add("hidden");
+      menuDesktop.classList.remove("hidden");
+      headerMenu.style.removeProperty("max-width");
+
+      Object.assign(headerMenu.style, {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        boxShadow: "0 0 2em #d3d3d3",
+        // maxWidth: "1000px",
+      });
+    } else {
+      mobileMenuButton.classList.remove("hidden");
+      menuDesktop.classList.toggle("hidden");
+      headerMenu.style.boxShadow = "none";
+    }
+  };
+
+  // Chama a função ao carregar e ao redimensionar a tela
+  adjustMenu();
+  window.addEventListener("resize", adjustMenu);
+});
